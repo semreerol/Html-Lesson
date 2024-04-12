@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Üye Kayıt Formu</h1>
+    <form name="kayit" action="kayit.php" method="get">
+        Ad Soyad:
+        <input type="text" name="adsoyad" id="adsoyad" size="20" maxlength="30" required autocomplete="on" autofocus placeholder="Ad Soyad Girin">
+        <br> Email:
+        <input type="email" name="email" id="email" required>
+        <br> WebSitesi:
+        <input type="url" name="adres" id="adres">
+        <br> Yaşınız:
+        <input type="number" name="yas" id="yas" required>
+        <br> Öneri: <textarea name="oneri" rows="5" cols="15"></textarea>
+        <br>
+        <input type="checkbox" name="bulten">Bültene abone ol
+        <br>
+        <input type="submit" value="Ekle">
+        <br>
+        <input type="radio" name="spor" value="futbol">Futbol
+        <br>
+        <input type="radio" name="spor" value="basketbol">Basketbol
+        <br> doğum Yeri:
+        <select name="iller">
+            <option>Adana</option>
+            <option>Adıyaman</option>
+            <option>İstanbul</option>
+            <option>izmir</option>
+            <option selected>Edirne</option>
+        </select>
+        <br>
+        <input type="image" src="submit.jpg" width="80">
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Temizle">
+    </form>
+</body>
+
+</html>
